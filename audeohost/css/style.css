@@ -1,0 +1,1264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #f7f9fc;
+    --bg-color2: #eee;
+    --text-color-dark: #2B3B6A;
+    --text-color: #2C2C2C;
+    --link-color: #4492F2;
+    --input-border-color: #e4e4e4;
+    --input-border-color-active: rgba(65, 83, 179, 0.5);
+    --title-color: #212b36;
+    --title-color2: #758590;
+    --border-color: #dddddd;
+    --white-color: #ffffff;
+    --dark-color: #18181a;
+    --black-color: #0D1018;
+    --green-color: #067b50;
+    --body-bg: #f5f5f5;
+    --absolute-dark: #18181a;
+    --absolute-white: #fff;
+    --mobile-search-bg: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --dropdown-menu-color: #ffffff;
+    --light-bg: #f7f9fc;
+    --c1-light-bg: rgba(65, 83, 179, 0.05);
+    --success-color: #16b559;
+    --title-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --black-bold: 900;
+    --base_fz: 0.875rem;
+    --h1_fz: 1.75rem;
+    --h2_fz: 45px;
+    --h3_fz: 1.125rem;
+    --h4_fz: 1rem;
+    --h5_fz: 0.875rem;
+    --h6_fz: 0.75rem;
+    --base-line-height: 1.4;
+    --title-line-height: 1.2;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.btn {
+    min-width: 108px;
+    height: 45px;
+    border-radius: 6px;
+}
+.btn-dark {
+    background: var(--black-color);
+}
+.link-color {
+    color: var(--link-color);
+}
+.link-color-dark{
+    color: var(--text-color-dark);
+}
+.green-color {
+    color: var(--green-color);
+}
+.form-label {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+
+}
+.form-control {
+    background: #f6f6f6;
+    color: rgba(44, 44, 44, 0.5);
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #E2E7F1;
+}
+.form-input-box textarea {
+    resize: none;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: var(--light);
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+
+.base-font {
+    font-size: 16px;
+    font-weight: var(--light);
+}
+ 
+.heading {
+    font-size: 36px;
+    font-weight: var(--black-bold);
+    background: linear-gradient(45deg, #4492F2 0%, #2B3B6A 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading-2 {
+    font-size: 36px;
+    font-weight: var(--black-bold);
+    margin-bottom: 20px;
+}
+.heading-3 {
+    font-size: 24px;
+    font-weight: var(--medium);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.heading-uppercase {
+    font-size: 27px;
+    font-weight: var(--medium);
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+span.span-block {
+    display: block;
+}
+section {
+    padding: 100px 0px;
+}
+
+.grid-box2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.grid-box3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.grid-box4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.header {
+    background: var(--black-color);
+    height: 88px;
+}
+
+.navbar-custom {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.navbar-custom a.navbar-brand {
+    padding: 0;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    font-size: 17px;
+    font-weight: var(--regular);
+    padding: 0;
+    padding-right: 50px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.navbar-custom .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0px;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link.active {
+    color: var(--link-color);
+}
+.navbar-custom .navbar-nav .nav-item .nav-link:hover {
+    color: var(--link-color);
+}
+.navbar-custom .btn-toggle {
+    border-color: var(--white-color);
+    padding: 4px;
+    width: 44px;
+    min-width: auto;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.navbar-custom .btn-toggle svg {
+    fill: var(--white-color);
+    width: 28px;
+    height: 28px;
+}
+
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    width: 100%;
+    height: 620px;
+    position: relative;
+}
+h1.banner-heading {
+    font-size: 36px;
+    font-weight: var(--extra-bold);
+}
+
+.banner-content {
+    text-align: center;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul.banner-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+ul.banner-list li {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+}
+ul.banner-list li:last-child {
+    border-right: 0px;
+}
+.banner-btn {
+    width: 215px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+/* ============= ELEVATE YOUR CUSTOMER EXPERIENCE SECTION CSS START ============= */
+
+.elevate-section {
+    background: url(../images/bg-transparent.png) rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ultimate-box {
+    background: url(../images/sport.png);
+    padding: 44px 40px;
+    border-radius: 30px;
+    height: 460px;
+    position: relative;
+}   
+.ultimate-box.second {
+    background: url(../images/in-house.png);
+}
+.ultimate-box::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000000bf;
+    border-radius: 30px;
+}
+.ultimate-text {
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+}
+.ultimate-text.second {
+    text-align: right;
+}
+
+.ultimate-text p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+/* ============= ELEVATE YOUR CUSTOMER EXPERIENCE SECTION CSS EXIT ============= */
+
+
+/* ============= VENUE EVENT PROMOTION SECTION CSS START ============= */
+.event-promotion {
+    background: linear-gradient(#141824 0%, #000000 100%);
+}
+.promotion-head {
+    font-size: 36px;
+    font-weight: var(--black-bold);
+}
+.event-audeoportal {
+    margin-bottom: 40px;
+}
+
+.download-app-text {
+    padding-left: 15px;
+}
+.download-app-text p {
+    margin: 30px 0px;
+}
+.download-app-btns {
+    display: flex;
+    gap: 10px;
+}
+.play-store-btn {
+    background: transparent;
+    border-radius: 10px;
+    border-color: transparent;
+}
+.event-large-bx {
+    padding-left: 20px;
+}
+ul.audeoportal-list li {
+    font-size: 18px;
+    font-weight: var(--light);
+}
+
+.download-app-frame {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.download-app-scren1 {
+    width: 185px;
+    height: 380px;
+    position: relative  ;
+}
+
+.download-app-scren1 img#screen1 {
+    width: 250px;
+    height: 300px;
+}
+.download-app-scren1 img#screen2 {
+    width: 250px;
+    height: 200px;
+}
+
+
+.download-app-scren2 img#screen2 {
+    width: 250px;
+    height: 280px;
+}
+
+img.app-frame1 {
+    width: 185px;
+    /* height: 300px; */
+    position: relative;
+}
+
+img.app-frame2 {
+    width: 185px;
+    /* height: 300px; */
+    position: relative;
+}
+
+.download-app-scren2 {
+    width: 185px;
+    height: 380px;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+}
+.download-app-scren1 img#screen1 {
+    top: 8px;
+    left: 10px;
+    width: 171px;
+    /* height: 368px; */
+    position: absolute;
+    border-radius: 20px;
+}
+.download-app-scren2 img#screen2 {
+    top: 8px;
+    left: 8px;
+    width: 171px;
+    /* height: 368px; */
+    position: absolute;
+    border-radius: 20px;
+}
+
+.download-app-scren3 {
+    width: 266px;
+    height: 485px;
+    position: relative;
+    left: -55px;
+    z-index: 2;
+}
+.download-app-scren3 img  {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ============= VENUE EVENT PROMOTION SECTION CSS EXIT ============= */
+
+
+/* ============= Footer SECTION CSS START ============= */
+.footer {
+    background: var(--black-color);
+}
+.row.footer-inner {
+    margin-top: 50px;
+}
+.foot-email {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.foot-email li {
+    margin-bottom: 24px;
+}
+.foot-email li p {
+    margin-bottom: 10px;
+    line-height: inherit;
+}
+.foot-email li p:last-child {
+    margin-bottom: 0px;
+}
+.foot-email li a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: var(--light);
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.foot-email li span {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: var(--light);
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.foot-email img {
+    height: 24px;
+}
+
+.foot-listing {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.foot-listing li a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: var(--light);
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+
+.go-top {
+    background: var(--link-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.go-top svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.go-top svg path {
+    fill: var(--white-color);
+}
+
+/* ============= Footer SECTION CSS EXIT ============= */
+
+/* ============= CONTACT SECTION CSS START ============= */
+.form-input-box {
+    margin-bottom: 15px;
+}
+.form-input-box input::placeholder {
+    color: rgba(44, 44, 44, 0.5);
+}
+.form-input-box input::-webkit-input-placeholder {
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.form-input-box input:-moz-placeholder {
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.heading.contact-head {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form p.contact-para {
+    font-size: 17px;
+    font-weight: var(--regular);
+    margin-bottom: 40px;
+}
+.contact-address {
+    padding-left: 15px;
+}
+.contact-address-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-address-list li {
+    margin-bottom: 35px;
+}
+.contact-address-list label.address-label {
+    color: var(--link-color);
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: var(--semi-bold);
+    margin-bottom: 10px;
+}
+.contact-address-list p {
+    margin: 0 0 10px;
+}
+
+span.contact-phn {
+    display: inline-block;
+}
+.contact-address-list a {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: var(--light);
+    text-decoration: none;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.contact-address-list .contact-num {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: var(--light);
+    text-decoration: none;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+
+/* ============= CONTACT SECTION CSS EXIT ============= */
+
+
+
+/* ============= CONTACT SECTION CSS START ============= */
+.date-timing {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.coming-image {
+    height: 210px;
+}
+.coming-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.comingup h4 {
+    color: var(--link-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0 5px;
+}
+.date-timing {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+.date-timing li {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: var(--medium);
+    border-right: 2px solid #000;
+    padding-right: 10px;
+    line-height: 15px;
+}
+
+.date-timing li:last-child {
+    border-right: 0px solid #ccc;
+}
+
+/* ============= CONTACT SECTION CSS EXIT ============= */
+
+/* ============= PRIVACY POLICY START EXIT ============= */
+.privacy-box {
+    margin-bottom: 20px;
+}
+.privacy-box h3.heading {
+    font-size: 36px;
+}
+.privacy-list-outer h3.heading {
+    font-size: 36px;
+}
+.privacy-h5 {
+    font-size: 18px;
+    font-weight: var(--regular);
+    color: var(--text-color);
+    margin: 10px 0;
+}
+.privacy-h6 {
+    font-size: 18px;
+    font-weight: var(--semi-bold);
+    margin: 10px 0;
+}
+span.list-bold {
+    font-weight: var(--medium);
+}
+
+.privacy-list li {
+    font-size: 18px;
+    font-weight: var(--light);
+    margin-bottom: 10px;
+}
+.privacy-list li:last-child {
+    margin-bottom: 0px;
+}
+.privacy-list li a {
+    color: var(--link-color);
+}
+
+/* ============= PRIVACY POLICY CSS EXIT ============= */
+
+/* ============= USE CASE CSS START ============= */
+#app {
+    /* max-width: 1400px;
+    margin: 0 auto; */
+    padding: 0;
+    position: relative;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0 60px;
+    position: relative;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  .swiper-slide:hover {
+    transform: scale(1.05);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid var(--white-color);
+    border-radius: 10px;
+  }
+
+  .swiper-carousel-animate-opacity {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 10px solid #fff;
+}
+
+.swiper-carousel-animate-opacity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  .slide-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent); */
+    padding: 24px;
+    /* padding-top: 60px; */
+  }
+
+  .slide-content h3.heading-3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: var(--white-color);
+}
+
+
+  .swiper-btns {
+    width: 140px;
+    height: 58px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #fff;
+    background: linear-gradient(184deg, #4492F2, #2B3B6A);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+
+  .swiper-btns .swiper-button-prev:after, .swiper-btns .swiper-rtl .swiper-button-next:after {
+    display: none;
+}
+.swiper-btns .swiper-button-next:after, .swiper-btns .swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+
+.swiper-btns .swiper-button-next svg, .swiper-btns .swiper-button-prev svg {
+    width: 35px;
+}
+
+/* ============= USE CASE CSS EXIT ============= */
+
+
+
+/* ============= MEDIA QUERY CSS START ============= */
+
+@media screen and (min-width:1400px) {
+    .heading {
+        font-size: 45px;
+    }
+    .heading-2 {
+        font-size: 28px;
+    }
+    h1.banner-heading {
+        font-size: 40px;
+    }
+    .promotion-head {
+        font-size: 45px;
+    }
+
+    .heading.contact-head {
+        font-size: 32px;
+    }
+    .contact-address {
+        padding-left: 50px;
+    }
+
+    .event-large-bx {
+        padding-left: 50px;
+    }
+    .heading-uppercase {
+        font-size: 27px;
+    }
+
+    .contact-address {
+        padding-left: 50px;
+    }
+
+    .download-app-scren1 {
+        width: 185px;
+    } 
+    .download-app-scren2 {
+        width: 185px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .download-app-scren1 {
+        width: 150px;
+    } 
+    .download-app-scren2 {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .download-app-scren1 {
+        width: 160px;
+    } 
+    .download-app-scren2 {
+        width: 160px;
+    }
+    .heading.contact-head {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .heading {
+        font-size: 36px;
+    }
+    .heading-2 {
+        font-size: 28px;
+    }
+    h1.banner-heading {
+        font-size: 32px;
+    }
+    .heading.contact-head {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar-custom .navbar-nav .nav-item .nav-link {
+        padding-right: 30px;
+    }
+
+    .download-app-scren1 {
+        width: 140px;
+        height: 300px;
+    } 
+    img.app-frame1 {
+        height: 100%;
+    }
+    .download-app-scren1 img#screen1 {
+        height: 250px;
+    }
+    .download-app-scren2 {
+        width: 140px;
+        height: 300px;
+    }
+    img.app-frame2 {
+        height: 100%;
+    }
+    .download-app-scren2 img#screen2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .download-app-scren3 {
+        height: 370px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    section {
+        padding: 70px 0px;
+    }
+    .heading-2 {
+        font-size: 24px;
+    }
+    .event-large-bx {
+        padding-left: 0;
+    }
+    .promotion-head {
+        font-size: 28px;
+    }
+    .navbar-custom {
+        position: relative;
+        z-index: 1;
+    }
+    .navbar-custom .btn-toggle {
+        display: block;
+    }
+
+    .navbar-custom ul.navbar-nav {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link {
+        color: var(--dark-color);
+        padding-right: 0px;
+        padding-bottom: 15px;
+    }
+    .navbar-custom .navbar-nav .nav-item:last-child .nav-link {
+        padding-bottom: 0px;
+    }
+    .banner-content {
+        width: 85%;
+    }
+
+    .heading-uppercase {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .download-app-frame {
+        justify-content: center;
+        padding-left: 60px;
+    }
+
+    .download-app-scren3 {
+        height: auto;
+    }
+    .download-app-scren1 {
+        width: 180px;
+        height: auto;
+    }
+    .download-app-scren2 {
+        width: 180px;
+        height: auto;
+    }
+
+    .download-app-text {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .contact-address {
+        padding-top: 30px;
+        padding-left: 0;
+    }
+
+    .heading.contact-head {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .contact-form p.contact-para {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    
+    section {
+        padding: 40px 0px;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+    .heading {
+        font-size: 32px;
+        text-align: center;
+    }
+    .heading-2 {
+        font-size: 28px;
+    }
+    .heading-3 {
+        text-align: center;
+    }
+
+    .banner {
+        height: 440px;
+    }
+    .banner-content {
+        width: 85%;
+    }
+    h1.banner-heading {
+        font-size: 30px;
+    }
+
+    .elevate-section {
+        background: none;
+    }
+    .event-small-bx .heading-2 {
+        text-align: center;
+    }
+    .event-small-bx .heading-3 {
+        text-align: center;
+    }
+    .ultimate-text.second {
+        text-align: center;
+    }
+
+    .download-app-text p {
+        margin: 30px 0px;
+    }
+    span.span-block {
+        display: inline-block;
+    }
+
+    .ultimate-box {
+        height: auto;
+    }
+    .ultimate-text p {  
+        display: inherit;
+    }
+
+    .download-app-btns {
+        justify-content: center;
+    }
+    .promotion-head {
+        text-align: center;
+    }
+    .event-audeoportal .heading-uppercase {
+        text-align: center;
+    }
+
+    .download-app-frame {
+        padding-left: 50px;
+    }
+
+    .download-app-scren1 {
+        width: 150px;
+        height: auto;
+    }
+    img.app-frame1 {
+        width: 140px;
+    }
+    img.app-frame2 {
+        width: 140px;
+    }
+    .download-app-scren2 {
+        width: 150px;
+        height: auto;
+    }
+    .download-app-scren1 img#screen1 {
+        width: 250px;
+        top: 5px;
+        left: 6px;
+    }
+    .download-app-scren2 img#screen2 {
+        width: 250px;
+        top: 6px;
+        left: 5px;
+    }
+
+    .grid-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+@media screen and (max-width:575px) {
+    .navbar-custom a.navbar-brand {
+        width: 210px;
+    }
+    .navbar-custom a.navbar-brand img {
+        width: 100%;
+    }
+    .heading {
+        font-size: 32px;
+    }
+    .heading-2 {
+        font-size: 24px;
+    }
+    h1.banner-heading {
+        font-size: 28px;
+    }
+
+    ul.banner-list {
+        gap: 10px;
+    }
+    ul.banner-list li {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .foot-logo {
+        width: 220px;
+    }
+    .foot-logo img {
+        width: 100%;
+    }
+
+    .privacy-box h3.heading {
+        font-size: 28px;
+    }
+    .privacy-h5 {
+        text-align: center;
+    }
+
+    .download-app-scren1 {
+        width: 120px;
+        height: 240px;
+    }
+    img.app-frame1 {
+        width: 132px;
+        height: 240px;
+    }
+    .download-app-scren1 img#screen1 {
+        height: 200px;
+        top:3px;
+    }
+    .download-app-scren2 {
+        width: 120px;
+        height: 240px;
+    }
+    img.app-frame2 {
+        width: 132px;
+        height: 240px;
+    }
+    .download-app-scren2 img#screen2 {
+        height: 200px;
+        top:3px;
+        left: 6px;
+    }
+    .download-app-scren3 {
+        width: 160px;
+        height: 312px;
+    }
+
+    
+    .heading.contact-head {
+        font-size: 24px;
+        text-align: center;
+    }
+    .contact-form p.contact-para {
+        text-align: center;
+    }
+    .col-12.form-input-box {
+        text-align: center;
+    }
+    .contact-address {
+        text-align: center;
+    }
+    .close-btn {
+        top: 15px;
+        right: 15px;
+    }
+    
+
+}
+
+@media screen and (max-width:480px) {
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    .heading-2 {
+        font-size: 20px;
+    }
+    .heading-3 {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .banner {
+        height: 370px;
+    }
+    .banner-content {
+        margin-top: 25px;
+    }
+    h1.banner-heading {
+        font-size: 24px;
+    }
+    ul.banner-list {
+        gap: 5px;
+    }
+    ul.banner-list li {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    .banner-btn {
+        width: 180px;
+        height: 44px;
+        font-size: 15px;
+    }
+
+    .download-app-btns {
+        display: flex;
+    }
+    .play-store-btn img {
+        height: 50px;
+    }
+
+    .download-app-frame {
+        padding-left: 50px;
+    }
+
+    .download-app-scren1 {
+        width: 100px;
+        height: 210px;
+    }
+    .download-app-scren2 {
+        width: 100px;
+        height: 210px;
+    }
+
+    img.app-frame1 {
+        height: 220px;
+    }
+    img.app-frame2 {
+        height: 220px;
+    }
+    .download-app-scren1 img#screen1 {
+        height: 208px;
+    }
+    .download-app-scren2 img#screen2 {
+        height: 208px;
+    }
+    .download-app-scren3 {
+        width: 130px;
+        height: 260px;
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .download-app-scren3 {
+        width: 135px;
+        height: 270px;
+    }
+    .download-app-scren3 img {
+        width: 135px;
+        height: 270px;
+        max-width: inherit;
+    }
+
+    .download-app-scren2 {
+        left: -20px;
+    }
+    .download-app-scren3 {
+        left: -45px;
+    }
+    .play-store-btn img {
+        height: 40px;
+    }
+}
+
+/* ============= MEDIA QUERY CSS EXIT ============= */
+
+
